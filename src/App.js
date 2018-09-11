@@ -12,6 +12,10 @@ import {
   View
 } from 'react-native';
 
+import './config/ReactotronConfig';
+
+console.tron.log('teste');
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -22,6 +26,7 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
