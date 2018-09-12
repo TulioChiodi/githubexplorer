@@ -12,7 +12,8 @@ import {
   View
 } from 'react-native';
 
-import './config/ReactotronConfig';
+import 'config/ReactotronConfig';
+import 'config/DevToolsConfig'
 
 console.tron.log('teste');
 
