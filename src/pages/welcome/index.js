@@ -63,7 +63,7 @@ export default class Welcome extends Component {
 
       this.props.navigation.dispatch(resetAction);
     } catch (err){
-        this.setState({ loading: false, errorMessage: 'usuário não existe' });
+      this.setState({ loading: false, errorMessage: 'usuário não existe' });
     }
   };
 
@@ -76,8 +76,8 @@ export default class Welcome extends Component {
           Para continuar, precisamos que você informe seu usuário do Github
         </Text>
 
-          { !!this.state.errorMessage
-          && <Text style={styles.error}> {this.state.errorMessage} </Text> }
+        { !!this.state.errorMessage
+        && <Text style={styles.error}> {this.state.errorMessage} </Text> }
 
         <View style={styles.form}>
           <TextInput
@@ -91,7 +91,7 @@ export default class Welcome extends Component {
           />
 
           <TouchableOpacity style={styles.button} onPress={this.signIn}>
-           { this.state.loading
+            { this.state.loading
               ? <ActivityIndicator size="small" color="#FFF" />
               : <Text style={styles.buttonText}>Prosseguir</Text>}
           </TouchableOpacity>
